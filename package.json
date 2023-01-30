@@ -1,0 +1,25 @@
+{
+  "name": "e-commerce-appeal-clothing-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd arcadia-appeal-clothing-store && npm start",
+    "server": "cd server && npm start",
+    "start": "concurrently \"npm run client \" \"npm  run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilOTechGod/E-commerce-appeal-clothing-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LilOTechGod/E-commerce-appeal-clothing-store/issues"
+  },
+  "homepage": "https://github.com/LilOTechGod/E-commerce-appeal-clothing-store#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
