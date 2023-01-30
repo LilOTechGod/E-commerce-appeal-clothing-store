@@ -75,21 +75,31 @@ async function findImages(interest, viewport_height,) {
 
 // uncomment after youve built out product
 
-// module.exports = {
-//     createProduct: async (req, res) => {
-//         try {
+module.exports = {
+    createProduct: async (req, res) => {
+        try {
 
-//             console.log(final)
+            console.log(final)
 
-//             let userData = await Product(final).save()
+            let userData = await Product(final).save()
 
-//             console.log(userData)
+            console.log(userData)
 
-//             res.status(200).json(userData)
-//         } catch (error) {
+            res.status(200).json(userData)
+        } catch (error) {
 
-//             res.status(400).json({ error, message: "Bad request check body" })
+            res.status(400).json({ error, message: "Bad request check body" })
 
-//         }
-//     }
-// }
+        }
+    },
+    getProducts: async (req, res) => {
+        try {
+            let proData = await Product.find()
+            res.status(200).json(proData)
+        } catch (error) {
+            res.status(400).json(error)
+
+
+        }
+    },
+}

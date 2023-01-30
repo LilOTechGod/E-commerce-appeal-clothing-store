@@ -1,11 +1,14 @@
 const router = require("express").Router();
 const { createUser } = require("../controller/userController")
-const { createProduct } = require("../controller/createProduct")
+const { createProduct, getProducts } = require("../controller/createProduct")
 
 
 
 router.post("/api/users", createUser)
-// router.post("/api/products", createProduct)
+
+router.post("/api/products", createProduct)
+router.get("/api/products", getProducts)
+
 
 
 
