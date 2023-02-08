@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import launchPage from './components/launchPage';
-import logIn from './components/logIn';
+import LaunchPage from './components/launchPage/launchPage';
+import LogIn from './components/logIn/logIn';
 
 function App() {
   return (
     <div>
-      <launchPage />
-      <logIn />
+      <LaunchPage />
+      <LogIn />
+      {/* <p>Hello</p> */}
     </div>
   );
 }
