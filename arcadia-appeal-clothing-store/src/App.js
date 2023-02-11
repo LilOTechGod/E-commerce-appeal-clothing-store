@@ -8,7 +8,7 @@ function App() {
     <div>
       <LaunchPage />
       <LogIn />
-      {/* <p>Hello</p> */}
+      
     </div>
   );
 }
