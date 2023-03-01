@@ -14,19 +14,7 @@ const launchPage = () => {
             <meta name="viewport" content="initial-scale=1, width=device-width" />
         </MetaTags>
       <header>
-        <Box sx= {{flexGrow: 1, marginBottom: 3}}>
-          <AppBar position='static'>
-            <Toolbar>
-              <Typography
-                noWrap
-                component="div"
-                sx={{mr: 2, display: {xs: "none", md: "flex"}}}
-                >
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHStElGWMbiyq8Qn7HtR7f2Nhpu9mmXyTBSw&usqp=CAU" style={{width: 172, height: 140}}/>
-                </Typography>
-            </Toolbar>
-          </AppBar>
-        </Box>
+      
       </header>
       <main>
         <h1>Arcadia</h1>
