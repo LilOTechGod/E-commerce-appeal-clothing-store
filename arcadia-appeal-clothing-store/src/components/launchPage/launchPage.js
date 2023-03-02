@@ -1,7 +1,6 @@
 import React from 'react'
 import MetaTags from 'react-meta-tags'
-import {AppBar, Toolbar, Typography } from "@mui/material";
-import { Box } from "@mui/material";
+
 
 const launchPage = () => {
   return (
@@ -13,17 +12,6 @@ const launchPage = () => {
             <meta property="og:image" content="" />
             <meta name="viewport" content="initial-scale=1, width=device-width" />
         </MetaTags>
-      <header>
-      
-      </header>
-      <main>
-        <h1>Arcadia</h1>
-        <div className='carosel'></div>
-        <h2>Categories</h2>
-        <div className='categories'>
-
-        </div>
-      </main>
     </div>
   );
 }
