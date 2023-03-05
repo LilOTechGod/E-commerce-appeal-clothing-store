@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
 import LaunchPage from './components/launchPage/launchPage';
-import LogIn from './components/logIn/logIn';
+import Appbar from './components/Appbar/app';
+import Carousel from './components/Carousel/carousel'
 
 function App() {
   return (
     <div>
       <LaunchPage />
-      <LogIn />
-      {/* <p>Hello</p> */}
+      <Appbar />
+      <Carousel />
     </div>
   );
 }

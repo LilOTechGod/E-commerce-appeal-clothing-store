@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/LilOTechGod/E-commerce-appeal-clothing-store#readme",
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "react-meta-tags": "^1.0.1"
   }
 }
