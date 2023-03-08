@@ -10,6 +10,7 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
@@ -53,7 +54,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
@@ -79,9 +80,9 @@ function SwipeableTextMobileStepper() {
               <Box
                 component="img"
                 sx={{
-                  height: 255,
+                  height: 450,
+                  objectFit: 'contain',
                   display: 'block',
-                  maxWidth: 400,
                   overflow: 'hidden',
                   width: '100%',
                 }}
