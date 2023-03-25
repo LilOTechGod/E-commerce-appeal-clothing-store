@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from '@mui/material';
 import "./app.css"
 
 const pages = ['Products', 'Pricing', 'Blog'];
@@ -152,9 +153,10 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+              {settings.map((element) => (
+                console.log(element),
+                <MenuItem key={element} onClick={handleCloseUserMenu}>
+                  <Link textAlign="center" href={`/${element}`} underline='none'>{element}</Link>
                 </MenuItem>
               ))}
             </Menu>

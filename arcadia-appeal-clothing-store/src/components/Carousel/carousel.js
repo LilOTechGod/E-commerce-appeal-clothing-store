@@ -9,6 +9,7 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import Categories from '../Categories/categories';
 
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
@@ -54,6 +55,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
+    <div>
     <Box sx={{ flexGrow: 1 }}>
       <Paper
         square
@@ -123,6 +125,8 @@ function SwipeableTextMobileStepper() {
         }
       />
     </Box>
+    <Categories/> 
+    </div>
   );
 }
 

@@ -60,10 +60,6 @@ async function findImages(interest, viewport_height,) {
         let user = await new Product(data[i]).save()
         console.log(user)
     }
-
-
-
-
 }
 
 
