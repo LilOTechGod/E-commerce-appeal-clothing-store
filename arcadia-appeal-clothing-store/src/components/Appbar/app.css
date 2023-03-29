@@ -1,3 +1,9 @@
 .nav-title {
   text-decoration: none;
 }
+
+.logo {
+  background-image: url(../../assets/logo-png.png);
+}
+
+
