@@ -9,30 +9,31 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import Categories from '../Categories/categories';
 
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: 'Log in or sign up to view sales!',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://ssr.azureedge.net/img/2019/01/05/d3d674b564becd776c2acc68a2e3eb694b2c9def.png',
   },
   {
-    label: 'Bird',
+    label: 'Mens designer appeal',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://images.complex.com/complex/images/c_crop,h_803,w_1428,x_6,y_3/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/hcahcxltksz70nwp1dpf/best-designer-goods-on-sale',
   },
   {
-    label: 'Bali, Indonesia',
+    label: 'Womans Designer fashion',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+      'https://www.hollywoodreporter.com/wp-content/uploads/2022/07/Nordstrom-Anniversary-Sale-_Campaign_4-H-PUBLICITY-main-2022.jpg?w=1500',
   },
   {
-    label: 'Goč, Serbia',
+    label: 'Designer coffe and handbags',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://i0.wp.com/coffeeandhandbags.com/wp-content/uploads/2018/05/where-to-buy-pre-owned-handbags.jpg?fit=1200%2C711&ssl=1',
   },
 ];
 
@@ -54,6 +55,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
+    <div>
     <Box sx={{ flexGrow: 1 }}>
       <Paper
         square
@@ -123,6 +125,8 @@ function SwipeableTextMobileStepper() {
         }
       />
     </Box>
+    <Categories/> 
+    </div>
   );
 }
 
